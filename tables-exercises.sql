@@ -14,6 +14,8 @@ show tables;
 
 -- 5. Explore the employees table. What different data types are present on this table?
 
+describe employees;
+
     -- INT : emp_no
     -- DATE: birth_date & hire_date
     -- VARCHAR: first_name & last_name
