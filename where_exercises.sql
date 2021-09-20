@@ -87,6 +87,6 @@ where last_name like '%q' or last_name like 'Q%';
 select *
 from employees
 where (last_name like '%q%' or last_name like 'Q%')
-and (last_name not like '%qu%' or last_name not like 'Qu%');
-	-- 1323 rows returned 
+and (last_name not like '%qu%' and last_name not like 'Qu%');
+	-- 547 rows returned 
     
