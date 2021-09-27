@@ -55,10 +55,10 @@ where to_date < curdate();
 	
 select count(emp_no)
 from employees
-where emp_no in (
+where emp_no not in (
 	select emp_no 
 	from dept_emp
-	where to_date < curdate()
+	where to_date > curdate()
 );
 	-- 85108
     
